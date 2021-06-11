@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoMVC</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/todomvc-app-css@2.2.0/index.css"
+    />
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+ <body>
+    <section class="todoapp">
+      <header class="header">
+        <h1>To Do</h1>
+          <input
+            id="Tarefa"
+            class="new-todo"
+            autocomplete="off"
+            placeholder="What needs to be done?"
+          />
+          <input
+            id="Data"
+            class="new-todo"
+            placeholder="What time?"
+            type="date"
+          />
+          <input
+            id="Hora"
+            class="new-todo"
+            placeholder="What time?"
+            type="time"
+          />
+          <input 
+            class="clear-completed"
+            type="button"
+            value="Adicionar Tarefa"
+            onclick="PegarDados()"
+          />
+      </header>
+
+      <div id="res"></div>
+    </section>
+   <footer>
+    <p>&copy; Adriano Carvalho - 2021</p>
+   </footer>
+   <script src="../Controller/Function.js"></script>
+ </body>
+</html>
